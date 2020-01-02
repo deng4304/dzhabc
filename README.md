@@ -38,7 +38,7 @@
 
 ![书源导入教程](https://images.gitee.com/uploads/images/2020/0102/115143_7d4ecc9c_5572791.jpeg "教程.jpg")
 
-### ❤【无尝分享】
+### ❤【爱心奉献】
 
 - 开源阅读主页
 - https://gedoor.github.io/MyBookshelf
