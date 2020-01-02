@@ -37,3 +37,15 @@
 - 复制【书源链接】，打开阅读，选择【书源管理】，点击右上角三个点，选择【网络导入】，粘贴链接，确定即可。
 
 ![书源导入教程](https://images.gitee.com/uploads/images/2020/0102/115143_7d4ecc9c_5572791.jpeg "教程.jpg")
+
+### ❤【无尝分享】
+
+- 开源阅读主页
+点击链接直达https://gedoor.github.io/MyBookshelf
+
+- 源仓库
+点击链接直达http://ku.mumuceo.com
+
+- 阅读酷
+点击链接直达http://ku.iszoc.com
+
