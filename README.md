@@ -52,3 +52,5 @@
 - 阅读酷
 - http://ku.iszoc.com
 
+- 网站挂了吗
+- https://gualemang.com
