@@ -45,10 +45,10 @@
 - https://gedoor.github.io/MyBookshelf
 
 - 源仓库
-- http://ku.mumuceo.com
+http://ku.mumuceo.com
 
 - 阅读酷
-- http://ku.iszoc.com
+http://ku.iszoc.com
 
 - 网站挂了吗
-- https://gualemang.com
+https://gualemang.com
