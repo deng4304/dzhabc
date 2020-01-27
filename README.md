@@ -42,7 +42,7 @@
 ##  :fa-heart: 【爱心奉献】
 
 - 开源阅读主页
-- https://gedoor.github.io/MyBookshelf
+https://gedoor.github.io/MyBookshelf
 
 - 源仓库
 http://ku.mumuceo.com
