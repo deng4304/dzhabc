@@ -14,7 +14,7 @@
 - 注：更新之后链接和二维码不变
 
 ##  :fa-qrcode: 【书源二维码】
-4
+
 ![书源二维码](https://images.gitee.com/uploads/images/2020/0112/161800_f306b3ea_5572791.png "书源二维码.png")
 
 ##  :fa-arrows: 【导入方案】
