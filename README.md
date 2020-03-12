@@ -15,6 +15,14 @@
 
 
 
+##   :fa-rss-square: 3.0 订阅源链接
+
+- ``
+
+##   :fa-refresh: 3.0 替换净化链接
+
+- ``
+
 ##  :fa-link: 2.0 书源链接
 
 - 书源：`690个`
@@ -25,6 +33,10 @@
 ##  :fa-qrcode: 2.0 书源二维码
 
 ![书源二维码](https://images.gitee.com/uploads/images/2020/0313/012156_b83f74d9_5572791.png "书源二维码.png")
+
+##  :fa-refresh: 2.0 替换净化链接
+
+- ``
 
 ##  :fa-arrows: 导入方案
 
@@ -50,7 +62,7 @@
 - 有任何问题可以在最底部评论区留言交流。
 - 防止失联，可将本贴加入收藏或书签，更新书源快人一步！
 
-##  :fa-heart: 爱心奉献
+##   :fa-share-alt: 主页导航
 
 - 开源阅读主页（阅读APP）
 `https://gedoor.github.io/MyBookshelf`
