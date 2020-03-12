@@ -7,8 +7,7 @@
 ##  :fa-link: 3.0 书源链接
 
 ###### 书源：个
-- 
-- 
+###### 
 - 更新日期：2020年0月0日（星期日）
 - 注：更新之后链接和二维码不变，从新导入一次即可。
 
@@ -18,7 +17,7 @@
 
 ##  :fa-link: 2.0 书源链接
 
-###### 书源：699
+###### 书源：699个
 ###### http://wz4.in/18T44
 ###### http://url-4.cn/18Rw
 - 两个链接的书源是一样的，二选一即可。
@@ -27,7 +26,7 @@
 
 ##  :fa-qrcode: 2.0 书源二维码
 
-!(https://images.gitee.com/uploads/images/2020/0112/161800_f306b3ea_5572791.png "书源二维码.png")
+![二维码](https://images.gitee.com/uploads/images/2020/0112/161800_f306b3ea_5572791.png "书源二维码.png")
 
 ##  :fa-arrows: 导入方案
 
@@ -42,11 +41,11 @@
 
 ### 方案一
 ##### 复制“书源链接”，打开阅读，选择“书源管理”，点击右上角三个点，选择“网络导入”，粘贴链接，确定即可。
-!(https://images.gitee.com/uploads/images/2020/0116/043317_4866ecb8_5572791.png "网络导入.png")
+![教程](https://images.gitee.com/uploads/images/2020/0116/043317_4866ecb8_5572791.png "网络导入.png")
 
 ### 方案二
 ##### 将本站“书源二维码”保存至本地，打开阅读，选择“书源管理”，点击右上角三个点，选择“二维码导入”，右上角“图库”进入选择相应二维码，等待导入成功即可。
-!(https://images.gitee.com/uploads/images/2020/0116/045835_d9f8b4cd_5572791.png "二维码导入.png")
+![教程](https://images.gitee.com/uploads/images/2020/0116/045835_d9f8b4cd_5572791.png "二维码导入.png")
 
 ##  :fa-lightbulb-o: 温馨提示
 
