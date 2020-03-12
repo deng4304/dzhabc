@@ -4,7 +4,12 @@
 
 ###### 开始修改和替换放入3.0版用不了的书源，工程比较大，时间不是很充裕，慢慢来吧！
 
-##  :fa-link: 书源链接【阅读2.0】
+##  :fa-link: 3.0 书源链接
+
+##  :fa-qrcode: 3.0 书源二维码
+
+
+##  :fa-link: 2.0 书源链接
 
 - 精品699个书源
 - http://wz4.in/18T44
@@ -13,7 +18,7 @@
 - 更新日期：2020年03月08日（星期日）
 - 注：更新之后链接和二维码不变
 
-##  :fa-qrcode: 书源二维码【阅读2.0】
+##  :fa-qrcode: 2.0 书源二维码
 
 ![书源二维码](https://images.gitee.com/uploads/images/2020/0112/161800_f306b3ea_5572791.png "书源二维码.png")
 
@@ -43,14 +48,11 @@
 
 ##  :fa-heart: 爱心奉献
 
-开源阅读主页
+##### 开源阅读主页（阅读APP）
 https://gedoor.github.io/MyBookshelf
 
-源仓库
+##### 源仓库（书源网站）
 http://ku.mumuceo.com
 
-阅读酷
-http://ku.iszoc.com
-
-网站挂了吗
+##### 网站挂了吗（链接检测）
 https://gualemang.com
