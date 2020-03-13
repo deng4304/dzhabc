@@ -24,7 +24,7 @@
 
 ##  :fa-qrcode: 2.0 书源二维码
 
-![书源](https://images.gitee.com/uploads/images/2020/0314/022141_92d4de6d_5572791.png "1600665918.png")
+![书源](https://images.gitee.com/uploads/images/2020/0314/022442_c17a6807_5572791.png "1600665918.png")
 
 ##  :fa-arrows: 导入方案
 
