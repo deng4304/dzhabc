@@ -12,7 +12,7 @@
 - 直接复制这条链接在阅读里'网络导入'不用点进去。
 `http://wz4.in/1a1ahc`
 - 更新日期：2020年03月15日（星期日）
-![复制教程](https://images.gitee.com/uploads/images/2020/0328/211636_a3da3622_5572791.png "复制.png")
+![复制教程](https://images.gitee.com/uploads/images/2020/0328/212000_8d1dd546_5572791.png "复制.png")
 - 注：每次更新之后链接不变，从新导入一次即可。
 
 ##  :fa-qrcode: 3.0 书源二维码
