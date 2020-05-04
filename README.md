@@ -11,10 +11,10 @@
 - 书源：`717个`不包含:underage: 源
 - 直接复制这条链接在阅读里'网络导入'不用点进去。
 - 由于短网址目前不稳定把原网址放出来
-`https://gitee.com/vpq/codes/ez5qu1ifx260layps3b7981/raw?blob_name=3.0sy.json`
-`http://wz4.in/1a1ahc`
+- `https://gitee.com/vpq/codes/ez5qu1ifx260layps3b7981/raw?blob_name=3.0sy.json`
+- `http://wz4.in/1a1ahc`
 - 更新日期：2020年05月01日（星期五）
-![复制](https://images.gitee.com/uploads/images/2020/0328/212958_7fd65271_5572791.png "复制.png")
+- ![复制](https://images.gitee.com/uploads/images/2020/0328/212958_7fd65271_5572791.png "复制.png")
 - 注：每次更新之后链接不变，从新导入一次即可。
 - 本站制作：酷安 @xfbswnd
 
@@ -27,8 +27,8 @@
 
 - 书源合集
 - 直接复制这条链接在阅读里'网络导入'不用点进去。
-`https://gitee.com/vpq/codes/spl03fq64tcxinywjzoe230/raw?blob_name=2.0sy.json`
-`http://wz4.in/1a1aiq`
+- `https://gitee.com/vpq/codes/spl03fq64tcxinywjzoe230/raw?blob_name=2.0sy.json`
+- `http://wz4.in/1a1aiq`
 - 更新日期：2020年03月26日（星期四）
 - 注：2.0版本以后不更新了，且用且珍惜！
 
