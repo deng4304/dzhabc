@@ -2,21 +2,20 @@
 
 ##  :fa-th-list: 更新内容
 
-- 书源长期更新，防止失联，可将本贴加入收藏或书签，更新书源快人一步！
-- 2.0书源和3.0书源不能共用，请看清之后再导入。
+- 更新时间是不定期的，不会停更请放心，有事情会出公告📢
 - 本页书源不包含 :underage: 特殊源，如有需要可到本页顶部`lssues`
 
 ##  :fa-link: 3.0 书源链接
 
 - 书源：`717个`不包含:underage: 源
 - 直接复制这条链接在阅读里'网络导入'不用点进去。
-- 由于短网址目前不稳定把原网址放出来
 - `https://gitee.com/vpq/codes/ez5qu1ifx260layps3b7981/raw?blob_name=3.0sy.json`
-- `http://wz4.in/1a1ahc`
+- `http://wz4.in/1a1ahc`短网址
 - 更新日期：2020年05月01日（星期五）
-- ![复制](https://images.gitee.com/uploads/images/2020/0328/212958_7fd65271_5572791.png "复制.png")
-- 注：每次更新之后链接不变，从新导入一次即可。
-- 本站制作：酷安 @xfbswnd
+![复制](https://images.gitee.com/uploads/images/2020/0328/212958_7fd65271_5572791.png "复制.png")
+- 2.0书源和3.0书源不能共用，请看清之后再导入。
+- 每次更新之后链接不变，从新导入一次即可。
+- 本站制作：酷安`xfbswnd`
 
 ##  :fa-qrcode: 3.0 书源二维码
 
@@ -28,9 +27,9 @@
 - 书源合集
 - 直接复制这条链接在阅读里'网络导入'不用点进去。
 - `https://gitee.com/vpq/codes/spl03fq64tcxinywjzoe230/raw?blob_name=2.0sy.json`
-- `http://wz4.in/1a1aiq`
+- `http://wz4.in/1a1aiq`短网址
 - 更新日期：2020年03月26日（星期四）
-- 注：2.0版本以后不更新了，且用且珍惜！
+- 2.0版本以后不更新了，且用且珍惜！
 
 ##  :fa-arrows: 导入方案
 
