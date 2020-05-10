@@ -56,8 +56,8 @@
 
 ##   :fa-share-alt: 主页导航
 
-> 开源阅读主页（阅读APP）
-https://gedoor.github.io/MyBookshelf
+> 开源阅读下载地址（阅读APP）
+https://www.coolapk.com/apk/io.legado.app.release
 
 > 源仓库（书源网站）
 http://ku.mumuceo.com
