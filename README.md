@@ -9,18 +9,16 @@
 ##  :fa-link: 3.0 书源链接
 
 - 书源：`600个书源`
-- 直接复制这条链接在阅读里'网络导入'不用点进去。
+- 复制下面链接，在阅读里'网络导入'。
 - `https://gitee.com/vpq/codes/ez5qu1ifx260layps3b7981/raw?blob_name=3.0sy.json`
 - 更新日期：2020年06月30日（星期二）
 ![复制](https://images.gitee.com/uploads/images/2020/0328/212958_7fd65271_5572791.png "复制.png")
 - 2.0书源和3.0书源不能共用，请看清之后再导入。
-- 每次更新之后链接不变，从新导入一次即可。
 - 本站制作：酷安`xfbswnd`
 
 ##  :fa-link: 2.0 书源链接
 
-- 书源合集
-- 直接复制这条链接在阅读里'网络导入'不用点进去。
+- 2.0书源合集
 - `https://gitee.com/vpq/codes/spl03fq64tcxinywjzoe230/raw?blob_name=2.0sy.json`
 - 更新日期：2020年03月26日（星期四）
 - 2.0版本以后不更新了，且用且珍惜！
