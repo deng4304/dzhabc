@@ -2,26 +2,19 @@
 
 ##  :fa-th-list: 更新内容
 
-- 更新日期：2020年06月30日
-- 做了一些优化
-- 删除了几十个源
+- 更新日期：2020年07月31日
+- 删了一百多书源
+- 优化了部分书源
 
 ##  :fa-link: 3.0 书源链接
 
-- 书源：`600个书源`
+- 书源：`489个书源`
 - 复制下面链接，在阅读里'网络导入'。
 - `https://gitee.com/vpq/codes/ez5qu1ifx260layps3b7981/raw?blob_name=3.0sy.json`
-- 更新日期：2020年06月30日（星期二）
+- 更新日期：2020年07月31日（星期五）
 ![复制](https://images.gitee.com/uploads/images/2020/0328/212958_7fd65271_5572791.png "复制.png")
 - 2.0书源和3.0书源不能共用，请看清之后再导入。
 - 本站制作：酷安`xfbswnd`
-
-##  :fa-link: 2.0 书源链接
-
-- 2.0书源合集
-- `https://gitee.com/vpq/codes/spl03fq64tcxinywjzoe230/raw?blob_name=2.0sy.json`
-- 更新日期：2020年03月26日（星期四）
-- 2.0版本以后不更新了，且用且珍惜！
 
 ##  :fa-arrows: 导入方案
 
