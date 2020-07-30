@@ -13,7 +13,6 @@
 - `https://gitee.com/vpq/codes/ez5qu1ifx260layps3b7981/raw?blob_name=3.0sy.json`
 - 更新日期：2020年07月31日（星期五）
 ![复制](https://images.gitee.com/uploads/images/2020/0328/212958_7fd65271_5572791.png "复制.png")
-- 2.0书源和3.0书源不能共用，请看清之后再导入。
 - 本站制作：酷安`xfbswnd`
 
 ##  :fa-arrows: 导入方案
