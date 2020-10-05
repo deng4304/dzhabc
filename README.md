@@ -11,7 +11,7 @@
 
 ##  :fa-link: 3.0 书源链接
 
-- 书源：`488个书源`
+- 书源：`489个书源`
 - 复制下面链接，在阅读里'网络导入'。
 https://gitee.com/vpq/codes/ez5qu1ifx260layps3b7981/raw?blob_name=3.0sy.json
 - 更新日期：2020年10月01日（星期四）
