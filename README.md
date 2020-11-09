@@ -12,7 +12,7 @@
 ##  :fa-link: 3.0 书源链接
 
 - 书源：`420个书源`
-- 复制下面链接，在阅读里'网络导入'。
+- 复制下面链接，在阅读里`网络导入`。
 https://gitee.com/vpq/codes/8js3dvel06t1u59qhryfo21/raw?blob_name=sy.json
 - 更新日期：2020年11月09日（星期一）
 - 本站制作：酷安 `一程丶`
