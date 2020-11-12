@@ -17,7 +17,7 @@
 
 - 书源：`420个书源`
 - 复制下面链接，在阅读里`网络导入`。
-https://gitee.com/vpq/codes/ouar7pc4hfgq0wymn9jzk30/raw?blob_name=sy.json
+https://gitee.com/vpq/codes/9ji1mged7v54brhspz3of71/raw?blob_name=sy.json
 - 更新日期：2020年11月12日（星期四）
 - 本站制作：酷安 `一程丶`
 
