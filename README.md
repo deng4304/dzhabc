@@ -2,6 +2,7 @@
 
 ##  :fa-th-list: 更新内容
 
+- 更新日期：2020年12月31日
 - 更新日期：2020年12月15日
 - 修复了很多原有源
 - 删除了几个重复源
@@ -9,10 +10,10 @@
 
 ##  :fa-link: 3.0 书源链接
 
-- 书源：`415个书源`
+- 书源：`410个书源`
 - 复制下面链接，在阅读里`网络导入`。
-https://gitee.com/vpq/codes/hp702r1y56ekisd4xzjc875/raw?blob_name=sy.json
-- 更新日期：2020年12月15日（星期二）
+https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
+- 更新日期：2020年12月31日（星期四）
 - 本站制作：酷安 `一程丶`
 
 ##  :fa-arrows: 导入方案
