@@ -18,11 +18,7 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 
 ##  :fa-arrows: 导入方案
 
-### 方案一
-- 导入书源前，请先在阅读APP内校验一遍旧书源，并删除失效书源；再将本站书源进行覆盖导入即可。
-
-### 方案二
-- 可直接删除阅读APP里旧书源，从新导入本站书源。(推荐使用此方案，方便又快捷)
+- 建议直接删除阅读APP里旧书源，从新导入本站书源。
 
 
 ##  :fa-film: 导入教程
@@ -32,17 +28,16 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 
 ##  :fa-lightbulb-o: 温馨提示
 
-- 有任何问题可以在最底部评论区留言交流。
-- 防止失联，可将本贴加入收藏或书签，更新书源快人一步！
 - 本站所有内容仅供书友交流学习，勿做商用。
+
 
 ##   :fa-share-alt: 主页导航
 
 > 开源阅读下载地址（阅读APP）
-https://www.coolapk.com/apk/io.legado.app.release
+[点击进入](https://github.com/gedoor/legado/releases/)
 
 > 源仓库（书源网站）
-http://ku.mumuceo.com
+[点击进入](http://yck.mumuceo.com/)
 
 > 网站挂了吗（链接检测）
-https://gualemang.com
+[点击进入](https://gualemang.com/)
