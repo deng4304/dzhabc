@@ -18,7 +18,7 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 
 ##  :fa-arrows: 导入方案
 
-- 建议直接删除阅读APP里旧书源，从新导入本站书源。
+- 建议直接删除旧书源，从新导入最新书源。
 
 
 ##  :fa-film: 导入教程
@@ -33,11 +33,8 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 
 ##   :fa-share-alt: 主页导航
 
-> 开源阅读下载地址（阅读APP）
-[点击进入](https://github.com/gedoor/legado/releases/)
+> [开源阅读](https://github.com/gedoor/legado/releases/)下载地址（阅读APP）
 
-> 源仓库（书源网站）
-[点击进入](http://yck.mumuceo.com/)
+> [源仓库](http://yck.mumuceo.com/)（书源网站）
 
-> 网站挂了吗（链接检测）
-[点击进入](https://gualemang.com/)
+> 网站[挂了吗](https://gualemang.com/)（链接检测）
