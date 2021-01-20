@@ -10,8 +10,6 @@
 
 ##  :fa-link: 3.0 书源链接
 
- 
-
 :book: `410个书源` 复制下面链接，在阅读书源管理`网络导入`。
 
 ```
@@ -19,7 +17,6 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 ```
 
 更新日期：2020年12月31日（星期四）
-#I1BNJG 
 
 ##  :fa-arrows: 导入方案
 
