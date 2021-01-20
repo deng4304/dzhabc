@@ -16,6 +16,7 @@
 ```
 https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 ```
+[书源点击导入](https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json)
 
 - 更新日期：2020年12月31日（星期四）
 - 本站制作：酷安 `一程丶`
@@ -37,8 +38,8 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 
 ##   :fa-share-alt: 主页导航
 
-> [开源阅读](https://github.com/gedoor/legado/releases/)下载地址（阅读APP）
+> [开源阅读](https://github.com/gedoor/legado/releases/)（阅读APP）
 
 > [源仓库](http://yck.mumuceo.com/)（书源网站）
 
-> [挂了吗](https://gualemang.com/)（链接检测）
+> [网站挂了吗](https://gualemang.com/)（链接检测）
