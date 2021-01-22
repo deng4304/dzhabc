@@ -11,6 +11,7 @@
 ```
 https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 ```
+更新日期：2020年12月31日
 
 ##  :fa-rss: 订阅源
 
@@ -19,7 +20,7 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 ```
 
 ```
-
+更新日期：2020年月日
 
 ##  :fa-arrows: 导入方案
 
@@ -37,7 +38,7 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 6. 粘贴链接点确定
 
 ### 订阅源导入教程
-1. 复制上面发布的“订阅源源”
+1. 复制上面发布的“订阅源”
 2. 打开阅读APP
 3. 在“订阅”一栏选择右上角:fa-cog:图标
 4. 点击右上角三个点
