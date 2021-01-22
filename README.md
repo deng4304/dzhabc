@@ -11,7 +11,7 @@
 ```
 https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 ```
-更新日期：2020年12月31日
+更新日期：2020年12月31日（星期四）
 
 ##  :fa-rss: 订阅源
 
@@ -42,7 +42,8 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 3. 在“订阅”一栏选择右上角:fa-cog:图标
 4. 点击右上角三个点
 5. 选择“本地导入”
-6. 找到下载好的文件点确定（注：如果显示未全选，请先全选再点确定，因为有些源的规则有修改）
+6. 找到并选择下载好的文件
+7. 弹出订阅源确定对话框，如果显示未全选，请先全选再点确定，因为有些源的规则有修改
 
 ##  :fa-lightbulb-o: 温馨提示
 
@@ -51,8 +52,8 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 
 ##   :fa-share-alt: 主页导航
 
-> [开源阅读](https://github.com/gedoor/legado/releases/)（阅读APP）
+> #### [开源阅读](https://github.com/gedoor/legado/releases/)（阅读APP）
 
-> [源仓库](http://yck.mumuceo.com/)（书源网站）
+> #### [源仓库](http://yck.mumuceo.com/)（书源网站）
 
-> [网站挂了吗](https://gualemang.com/)（链接检测）
+> #### [网站挂了吗](https://gualemang.com/)（链接检测）
