@@ -9,9 +9,9 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 ```
 更新日期：2020年12月31日（星期四）
 ##  :fa-rss: 订阅源
-订阅源：`233个订阅源`
+订阅源：`230个订阅源`
 #### [点此进入下载](https://wwi.lanzous.com/b00nemyqf)
-更新日期：2020年01月23日（星期六）
+更新日期：2020年01月25日（星期一）
 ##  :fa-arrows: 导入方案
 建议删除旧书源，从新导入最新书源。
 ##  :fa-film: 导入教程
