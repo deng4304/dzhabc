@@ -10,6 +10,11 @@ https://gitee.com/vpq/codes/kiy2st16c4l5fqov7hnjg26/raw?blob_name=sy.json
 更新日期：2020年12月31日（星期四）
 ##  :fa-rss: 订阅源
 订阅源：`230个订阅源`
+
+```
+http://shuyuan.miaogongzi.site/shuyuan/1613052650.json
+```
+
 #### [点此进入下载](https://wwi.lanzous.com/b00nemyqf)
 更新日期：2021年01月25日（星期一）
 ##  :fa-arrows: 导入方案
