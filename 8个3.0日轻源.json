@@ -1,0 +1,429 @@
+[
+  {
+    "bookSourceComment": "<js>\nresult=result.replace(/m/,'www');\n</js>",
+    "bookSourceGroup": "轻小说📗",
+    "bookSourceName": "📗哔哩轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.linovelib.com",
+    "customOrder": 2,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "电击文库::/wenku/lastupdate_0_1_0_0_0_0_0_{{page}}_0.html\n富士见文库::/wenku/lastupdate_0_2_0_0_0_0_0_{{page}}_0.html\n角川文库::/wenku/lastupdate_0_3_0_0_0_0_0_{{page}}_0.html\nMF文库J::/wenku/lastupdate_0_4_0_0_0_0_0_{{page}}_0.html\nFami通文库::/wenku/lastupdate_0_5_0_0_0_0_0_{{page}}_0.html\nGA文库::/wenku/lastupdate_0_6_0_0_0_0_0_{{page}}_0.html\nHJ文库::/wenku/lastupdate_0_7_0_0_0_0_0_{{page}}_0.html\n一迅社::/wenku/lastupdate_0_8_0_0_0_0_0_{{page}}_0.html\n集英社::/wenku/lastupdate_0_9_0_0_0_0_0_{{page}}_0.html\n小学馆::/wenku/lastupdate_0_10_0_0_0_0_0_{{page}}_0.html\n讲谈社::/wenku/lastupdate_0_11_0_0_0_0_0_{{page}}_0.html\n少女文库::/wenku/lastupdate_0_12_0_0_0_0_0_{{page}}_0.html\n其他文库::/wenku/lastupdate_0_13_0_0_0_0_0_{{page}}_0.html\n华文轻小说::/wenku/lastupdate_0_14_0_0_0_0_0_{{page}}_0.html\n轻改漫画::/wenku/lastupdate_0_15_0_0_0_0_0_{{page}}_0.html\n人气小说::/wenku/allvisit_0_0_0_0_0_0_0_{{page}}_0.html\n最近更新::/wenku/lastupdate_0_0_0_0_0_0_0_{{page}}_0.html",
+    "lastUpdateTime": 1611513190492,
+    "ruleBookInfo": {
+      "author": "class.book-rand-a@tag.span.0@text",
+      "canReName": "true",
+      "coverUrl": "class.book-detail-info@class.book-layout@tag.img.0@src",
+      "intro": "id.bookSummary@tag.content@textNodes\n@js:\nresult=\"  \"+result;",
+      "kind": "<js>result=String(result).replace(/<\\/em><em[^>]*>/g,\" / \")</js>\nclass.tag-small-group origin-left@text&&\nclass.book-cell@tag.p.1@ownText&&\nclass.gray ell@text\n##.*万字|·.*",
+      "lastChapter": "class.gray ell@text##.*·",
+      "name": "class.book-title.0@text\n@js:java.put('sm',result.replace(/\\s/g,' '))",
+      "tocUrl": "class.btn-normal red@href",
+      "wordCount": "class.book-cell@tag.p.1@ownText##连载|完结"
+    },
+    "ruleContent": {
+      "content": "<js>\n//正文规则\nvar selector=\"id.acontent@html\";\n\n!(/google.cn/).test(baseUrl)?java.getString(selector,false):decodeURIComponent(baseUrl.replace(/^.*?text=/, ''))\n\n</js>",
+      "imageStyle": "FULL",
+      "nextContentUrl": "class.footlink@tag.a.3@href@js:\nvar isNew=/\\/(\\d+).html/.test(result);\nvar out=isNew?'':result;\nout",
+      "replaceRegex": "##\\s*\\（继续下一页\\）\\s*|\\s*\\（本章未完\\）\\s*|"
+    },
+    "ruleExplore": {
+      "author": "class.book-author@ownText",
+      "bookList": "class.book-ol book-ol-normal jsBooks@tag.li",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-original",
+      "intro": "class.book-desc@text",
+      "kind": "class.tag-small-group origin-right@tag.em.0@text&&\nclass.tag-small-group origin-right@tag.em.1@text",
+      "name": "class.book-title@text",
+      "wordCount": "class.tag-small blue@text"
+    },
+    "ruleSearch": {
+      "author": "class.book-author@text##作者",
+      "bookList": "class.book-ol book-ol-normal@tag.li",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "a@href@js:\nvar id = result.match(/\\/(\\d+)\\.html/)[1];\n'https://www.linovelib.com/files/article/image/'+parseInt(id/1000)+'/'+id+'/'+id+'s.jpg';",
+      "intro": "class.book-desc@text",
+      "kind": "class.tag-small-group origin-right@tag.em@text",
+      "name": "class.book-title-x@class.book-title@text"
+    },
+    "ruleToc": {
+      "chapterList": "//ol/*<js>\n//按卷分隔\nsub=String(result).slice(1,-1).split(/, (?=<li class=\"chapter-bar chapter-li\")/);\ner=0;\nsm=java.getString(\"class.header-back-title@text\",false);\n//显示卷名\nvar opts = {\n  showVolName: false,\n  showVol:true\n};\nif(sub.length>=1)for(var i=0;i<sub.length;i++){\n//捕获卷名\njm=sub[i].match(/\\s*([^<>\\n]+)\\s*<\\/li/);\nif(!jm)continue;\n\n//插入卷名\nsub[i]=sub[i]\n.replace(/html([^>]*)><span([^>]*)>/g,(opts.showVolName ? 'html$1><span$2>🍥['+jm[1]+']🍥' :'html$1><span$2>'+ ('').padStart(3, \"\\u2000\")))\n\n.replace(/javascript\\:cid\\(0\\)([^>]*)><span([^>]*)>/g,(opts.showVolName ? 'javascript:cid(0)\\\\'+jm[1]+'$1><span$2>['+jm[1]+']❗' :'javascript:cid(0)\\\\'+jm[1]+'$1><span$2>'+ ('').padStart(3, \"\\u2000\")));\n\nif(opts.showVol)\n//按卷分块\nsub[i]='<a href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+sm+'\\\\'+jm[1]+'\">♦️['+jm[1]+']♦️</a>'+sub[i]\n};\n//合并结果\nsub.join(\"\");\n\n//检查灰色章节\nsub_gray=String(sub).split(/(?=<a href=\"javascript\\:cid\\(0\\))/);\n\nfor(var j=0;j<sub_gray.length;j++){\nsub_gray[j]=sub_gray[j]\n.replace(/href=\"javascript\\:cid\\(0\\)([^\"]*)\"([^>]*)><span([^>]*)>(\\s*)([^<]*)/g,'href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+sm+'$1'+'\\\\'+\"灰色章节：\"+(er++)+'\"$2><span$3>$4❗$5❗');\n}\n\nsub_gray.join(\"\");\n\n</js>a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/s/{{key}}/{{page}}.html",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "轻小说📗",
+    "bookSourceName": "📗吾的轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.biquge1000.com",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "电击文库::/list/1/{{page}}.html\n富士见文库::/list/2/{{page}}.html\n角川文库::/list/3/{{page}}.html\nMF文库J::/list/4/{{page}}.html\nFami通文库::/list/5/{{page}}.html\nGA文库::/list/6/{{page}}.html\nHJ文库::/list/7/{{page}}.html\n一迅社::/list/8/{{page}}.html\n集英社::/list/9/{{page}}.html\n小学馆::/list/10/{{page}}.html\n讲谈社::/list/11/{{page}}.html\n少女文库::/list/12/{{page}}.html\n其他文库::/list/13/{{page}}.html\n游戏剧本::/list/14/{{page}}.html\n人气小说::/top/allvisit/{{page}}.html\n最近更新::/top/lastupdate/{{page}}.html",
+    "header": "Mozilla/5.0 (Linux; Android 10; MI 8 Build/QKQ1.190828.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36",
+    "lastUpdateTime": 1609865991155,
+    "ruleBookInfo": {
+      "author": "class.booktag@tag.a.0@text",
+      "canReName": "true",
+      "coverUrl": "id.bookIntro@tag.img@src",
+      "intro": "id.bookIntro@textNodes\n@js:\nresult=\"  \"+result;",
+      "kind": "class.booktag@tag.a.1@text&&\nclass.booktag@tag.span.2@text&&\nclass.visible-xs.0@text",
+      "lastChapter": "class.col-md-10@tag.p.1@a@text",
+      "name": "class.bookTitle@text\n@js:\nresult=String(result).replace(/\\s/g,' ');\njava.put('sm',result);",
+      "wordCount": "class.booktag@tag.span.0@text##字数："
+    },
+    "ruleContent": {
+      "content": "<js>\nlet c=java.getString(\"id.htmlContent@html\",false);\nif(baseUrl.match(/biquge1000.com/)){\nresult=c\n}else{\nresult=baseUrl.match(/text=(.*)/)[1]\n}\n</js>",
+      "imageStyle": "FULL",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "tag.td.2@text",
+      "bookList": "class.table@tbody@tag.tr!0",
+      "bookUrl": "tag.td.0@a@href",
+      "coverUrl": "tag.td.0@a@href@js:\nvar id = result.match(/\\/book\\/(\\d+)\\.html/)[1];\n'/files/article/image/'+parseInt(id/1000)+'/'+id+'/'+id+'s.jpg';",
+      "kind": "tag.td.-1@text&&\ntag.td.-2@text\n<js>\nresult=String(result).replace(/完成/g,'完结');\n</js>",
+      "lastChapter": "tag.td.1@a@text",
+      "name": "tag.td.0@a@title\n<js>result=result.replace(/\\s/g,' ')</js>"
+    },
+    "ruleSearch": {
+      "author": "tag.li.2@text",
+      "bookList": "class.mySearch@ul!-1",
+      "bookUrl": "a@href",
+      "coverUrl": "tag.li.0@a@href@js:\nvar id = result.match(/\\/book\\/(\\d+)\\.html/)[1];\n'/files/article/image/'+parseInt(id/1000)+'/'+id+'/'+id+'s.jpg';",
+      "kind": "tag.li.3@text&&\ntag.li.5@text\n<js>\nresult=String(result).replace(/完成/g,'完结');\n</js>",
+      "lastChapter": "tag.li.1@a@text",
+      "name": "tag.li.0@a@text\n<js>result=result.replace(/\\s/g,' ')</js>"
+    },
+    "ruleToc": {
+      "chapterList": "//div[@id=\"list-chapterAll\"]/dl[@class=\"panel-body panel-chapterlist\"]/*<js>\n//按卷分隔\nsub=String(result).slice(1,-1).split(/, (?=<dt class=\"col-md-12\")/);\nsm=java.getString(\"class.bookTitle@text\",false);\nsm=String(sm).replace(/\\s/g,' ');\n//显示卷名\nvar opts = {\n  showVolName: false,\n  showVol:true\n};\n\nif(sub.length>=1)for(var i=0;i<sub.length;i++){\n//捕获卷名\njm=sub[i].match(/\\s*([^<>\\n]+)\\s*<\\/dt/);\nif(!jm)continue;\nsub[i]=sub[i].replace(/\">(.*)<\\/a/g,(opts.showVolName ? '\">🍥['+jm[1]+']🍥$1<\\/a':'\">'+ ('').padStart(3, \"\\u2000\")+'$1<\\/a'));\n\nif(opts.showVol)\n//按卷分块\nsub[i]='<dd class=\"col-md-3\"><a href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+sm+'\\\\'+jm[1]+'\">♦['+jm[1]+']♦</a></dd>'+sub[i];\n}\n//合并结果\nsub.join(\"\")\n</js>a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}}&page={{page}},{\n  \"charset\": \"gbk\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "轻小说📗",
+    "bookSourceName": "📗神凑轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.shencou.com",
+    "customOrder": 4,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "电击文库::/modules/article/articlelist.php?class=1&page={{page}}\n富士见文库::/modules/article/articlelist.php?class=2&page={{page}}\n角川文库::/modules/article/articlelist.php?class=3&page={{page}}\nMF文库J::/modules/article/articlelist.php?class=4&page={{page}}\nFami通文库::/modules/article/articlelist.php?class=5&page={{page}}\nGA文库::/modules/article/articlelist.php?class=6&page={{page}}\nHJ文库::/modules/article/articlelist.php?class=7&page={{page}}\n一迅社::/modules/article/articlelist.php?class=8&page={{page}}\n集英社::/modules/article/articlelist.php?class=9&page={{page}}\n讲坛社::/modules/article/articlelist.php?class=12&page={{page}}\n漫画社::/modules/article/articlelist.php?class=13&page={{page}}\n少女文库::/modules/article/articlelist.php?class=10&page={{page}}\nSF文库::/modules/article/articlelist.php?class=11&page={{page}}\n人气小说::/modules/article/toplist.php?sort=allvisit&page={{page}}\n最近更新::/modules/article/toplist.php?sort=lastupdate&page={{page}}",
+    "lastUpdateTime": 1607402500176,
+    "ruleBookInfo": {
+      "author": "//div[@class=\"block_txt2\"]/p[3]/a/text()",
+      "canReName": "true",
+      "coverUrl": "class.block_img2@tag.img@src",
+      "intro": "//div[@class=\"intro_info\"][2]/html()",
+      "kind": "//div[@class=\"block_txt2\"]/p[4]/a/text()&&\n//div[@class=\"block_txt2\"]/p[5]/text()&&\n//div[@class=\"block_txt2\"]/p[6]/text()",
+      "lastChapter": "//div[@class=\"block_txt2\"]/p[7]/a/text()",
+      "name": "class.block_txt2@h2@text\n@js:java.put('sm',result.replace(/\\s/g,' '))",
+      "tocUrl": "text.查看目录@href\n@js:\nvar id = result.match(/aid=(\\d+)&/)[1];\n'http://www.shencou.com/read/'+parseInt(id/1000)+'/'+id+'/index.html';",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "//div[@id=\"nr1\"]/html()\n@js:\nif(baseUrl.match(/google.cn/)){\nresult=baseUrl.match(/text=[^\\.]*\\.(.*)/)[1]\n}\nelse{\nresult=result;\n}",
+      "imageStyle": "FULL",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "tag.p.0@text##著作.*：|·来自.*",
+      "bookList": "//table[@class=\"grid\"]/tbody/tr/td/div[@style=\"width:382px;float:left;margin:5px 0px 5px 5px;\"]&&\n//table[@class=\"grid\"]/tbody/tr/td/div[@style=\"width:382px;float:left;margin:3px 3px 3px 3px;\"]",
+      "bookUrl": "tag.b.0@tag.a@href@js:\nvar id = result.match(/\\/books\\/read_(\\d+)\\.html/)[1];\n'http://m.shencou.com/wapinfo.php?id='+id;",
+      "coverUrl": "tag.img.0@src",
+      "kind": "tag.p.0@text&&\ntag.p.1@text##.*时间：|- -|全文.*|著作.*来自",
+      "lastChapter": "tag.p.2@a@text",
+      "name": "tag.b.0@text\n<js>result=String(result).replace(/\\s/g,' ')</js>",
+      "wordCount": "tag.p.1@text##.*全文长度：|字"
+    },
+    "ruleSearch": {
+      "author": "tag.a.2@text",
+      "bookList": "class.cover@class.line",
+      "bookUrl": "tag.a.1@href",
+      "coverUrl": "tag.a.1@href@js:\nvar id = result.match(/id=(\\d+)/)[1];\n'http://www.shencou.com/files/article/image/'+parseInt(id/1000)+'/'+id+'/'+id+'s.jpg';",
+      "kind": "tag.a.0@text",
+      "lastChapter": "",
+      "name": "tag.a.1@text\n<js>result=String(result).replace(/\\s/g,' ')</js>",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "//div[@class=\"zjbox\" or @class=\"box\"]/*\n<js>\n//按卷分隔\nsub=String(result).slice(1,-1).split(/, (?=<div class=\"tt gtt\")/);\nsm=java.getString(\"class.footnav@a@text\",false);\ncount=0;\n//显示卷名\nvar opts = {\n  showVolName: true\n};\nif(sub.length>=1)for(var i=1;i<sub.length;i++){\n//捕获卷名\njm=sub[i].match(/\\s*([^<>\\n]+)\\s*<\\/h2/);\nif(!jm)continue;\n\nsub[i]=sub[i].replace(/\">(.*)<\\/a/g,(opts.showVolName ? '\">🍥['+jm[1]+']🍥$1<\\/a':'\">'+ ('').padStart(3, \"\\u2000\")+'$1<\\/a'));\n//按卷分块\nsub[i]='<li><a href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+(++count)+'.'+sm+'\\\\'+jm[1]+'\">♦['+jm[1]+']♦</a></li>'+sub[i];\n\n}\n//合并结果\nsub.join(\"\")\n</js>li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href\n<js>\nif(result.match(/google.cn/)){result=result}\nelse{\nvar book = baseUrl.match(/read\\/\\d*\\/(\\d+)\\/index.html/)[1];\nvar mulu = result.match(/(\\d+).html/)[1];\n'http://m.shencou.com/wapreader.php?aid='+book+'&cid='+mulu;\n}\n</js>",
+      "updateTime": ""
+    },
+    "searchUrl": "http://m.shencou.com/waps.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchtype=articlename&searchkey={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "轻小说📗",
+    "bookSourceName": "📗随想轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://book.suixw.com",
+    "bookUrlPattern": "",
+    "customOrder": 5,
+    "enabled": false,
+    "enabledExplore": true,
+    "exploreUrl": "电击文库::/modules/article/articlelistwz.php?class=1&page={{page}}\n富士见文库::/modules/article/articlelistwz.php?class=2&page={{page}}\n角川文库::/modules/article/articlelistwz.php?class=3&page={{page}}\nMF文库J::/modules/article/articlelistwz.php?class=4&page={{page}}\nFami通文库::/modules/article/articlelistwz.php?class=5&page={{page}}\n其他文库::/modules/article/articlelistwz.php?class=6&page={{page}}\n最近更新::/modules/article/articlelistwz.php?page={{page}}",
+    "lastUpdateTime": 1609718044330,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "author": "id.content@tag.td.5@text##小说作者：",
+      "canReName": "true",
+      "coverUrl": "id.content@tag.img@src",
+      "intro": "id.content@tag.td.14@html##主要角色：.*\n<js>\nresult=String(result).replace(/.*内容简介：/g,'');\nresult = String(result).replace(/<img\\s+[^>]+>/ig, '');\n</js>",
+      "kind": "id.content@tag.td.4@text&&\nid.content@tag.td.6@text&&\nid.content@tag.td.8@text##文库分类：|文章状态：",
+      "lastChapter": "id.content@tag.td.14@text##最近章节：|内容简介：.*",
+      "name": "id.content@tag.td.2@text\n<js>result=result.replace(/\\s/g,' ')</js>\n@js:java.put('sm',result);",
+      "tocUrl": "id.content@tag.div.5@tag.a@href",
+      "wordCount": "id.content@tag.td.7@text##全文长度：|字"
+    },
+    "ruleContent": {
+      "content": "<js>\nlet c=java.getString(\"id.content@html\",false);\nif(baseUrl.match(/suixw.com/)){\nresult=c\n}else{\nresult=baseUrl.match(/text=(.*)/)[1]\n}\n</js>",
+      "imageStyle": "FULL"
+    },
+    "ruleExplore": {
+      "author": "class.odd.1@text",
+      "bookList": "class.grid@tag.tbody@tag.tr!0",
+      "bookUrl": "class.odd.0@tag.a@href",
+      "coverUrl": "class.odd.0@tag.a@href\n@js:\nvar id = result.match(id=/(\\d+)/)[1];\n'http://book.suixw.com/files/article/image/'+parseInt(id/1000)+'/'+id+'/'+id+'s.jpg';",
+      "kind": "class.even.0@text&&\nclass.odd.2@text&&\nclass.even.3@text",
+      "lastChapter": "class.even.1@tag.a@text",
+      "name": "class.odd.0@tag.a@text\n<js>result=result.replace(/\\s/g,' ')</js>",
+      "wordCount": "class.even.2@text\n<js>result=result.replace(/K/,'000')</js>"
+    },
+    "ruleSearch": {
+      "author": "class.odd.1@text",
+      "bookList": "class.grid@tag.tbody@tag.tr!0",
+      "bookUrl": "class.odd.0@tag.a@href",
+      "coverUrl": "class.odd.0@tag.a@href\n@js:\nvar id = result.match(id=/(\\d+)/)[1];\n'http://book.suixw.com/files/article/image/'+parseInt(id/1000)+'/'+id+'/'+id+'s.jpg';",
+      "kind": "class.odd.2@text&&\nclass.even.2@text",
+      "lastChapter": "class.even.0@tag.a@text",
+      "name": "class.odd.0@tag.a@text\n<js>result=result.replace(/\\s/g,' ')</js>",
+      "wordCount": "class.even.1@text\n<js>result=result.replace(/K/,'000')</js>"
+    },
+    "ruleToc": {
+      "chapterList": "//table[@class=\"acss\"]/tbody/*\n<js>\n//按卷分隔\nsub=String(result).slice(1,-1).split(/ (?=<td colspan=\"4\")/);\nsm=java.getString(\"id.title@text\",false);\n//显示卷名\nvar opts = {\n  showVolName: false\n};\n\nif(sub.length>=1)for(var i=0;i<sub.length;i++){\n//捕获卷名\njm=sub[i].match(/class=\"vcss\">\\s*([^<>\\n]+)\\s<!-/);\nif(!jm)continue;\n\nsub[i]=sub[i].replace(/<a([^>]*)>(.*)<\\/a/g, (opts.showVolName ? '<a$1>🍥['+jm[1]+']🍥$2<\\/a' : '<a$1>'+ ('').padStart(3, \"\\u2000\")+'$2<\\/a'));\n\n//按卷分块\nsub[i]='<td class=\"ccss\"><a href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+sm+'\\\\'+jm[1]+'\">♦['+jm[1]+']♦</a></dd>'+sub[i];\n}\n//合并结果\nsub.join(\"\")\n</js>\n//td/a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/modules/article/search.php?searchtype=articlename&searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "轻小说📗",
+    "bookSourceName": "📗ACG狗狗",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://novel.acg.gg",
+    "bookUrlPattern": "",
+    "customOrder": 6,
+    "enabled": false,
+    "enabledExplore": true,
+    "exploreUrl": "全部书库::/fenlei/_{{page}}/\n电击文库::/fenlei/1_{{page}}/\n富士见文库::/fenlei/2_{{page}}/\n角川文库::/fenlei/3_{{page}}/\nMF文库J::/fenlei/4_{{page}}/\nFami通文库::/fenlei/5_{{page}}/\nGA文库::/fenlei/6_{{page}}/\n其他文库::/fenlei/7_{{page}}/",
+    "lastUpdateTime": 1607402535814,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "author": "class.booktitle@p@tag.a.1@text",
+      "canReName": "true",
+      "coverUrl": "class.bigpic@tag.img@src",
+      "intro": "class.book-intro@html##标签.*|最新章节\\(.*",
+      "kind": "class.booktitle@p@tag.a.0@text&&\nclass.book-intro@tag.b.1@text##.*章节\\(|\\).*",
+      "lastChapter": "id.newchapter@text",
+      "name": "class.name@h1@text\n@js:\njava.put('sm',result.replace(/\\s/g,' '));",
+      "tocUrl": "@css:.bookbtn-bd a:contains(查看目录)@href",
+      "wordCount": "class.booktitle@p@text##.*点击\\||\\|作者.*\n<js>result=result.replace(/K/,'000')</js>"
+    },
+    "ruleContent": {
+      "content": "<js>\nlet c=java.getString(\"class.article-con@html\",false);\nif(baseUrl.match(/acg.gg/)){\nresult=c\n}else{\nresult=baseUrl.match(/text=(.*)/)[1]\n}\n</js>",
+      "imageStyle": "FULL"
+    },
+    "ruleExplore": {
+      "bookList": "id.container@class.box",
+      "bookUrl": "class.booktitle@href",
+      "coverUrl": "tag.img@data-original",
+      "intro": "@css:p:contains(点击阅读) span@text",
+      "name": "class.booktitle@text"
+    },
+    "ruleSearch": {
+      "author": "tag.td.2@text",
+      "bookList": "id.conn@tag.tr!0",
+      "bookUrl": "tag.td.0@tag.a@href",
+      "coverUrl": "tag.td.0@tag.a@href<js>\nvar id = result.match(/(\\d+)\\.html/)[1];\nvar iid = parseInt(id/1000);\n'/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "kind": "tag.td.-1@text&&\ntag.td.-2@text",
+      "lastChapter": "tag.td.1@text",
+      "name": "tag.td.0@tag.a@text",
+      "wordCount": "tag.td.-3@text\n<js>result=result.replace(/K/,'000')</js>"
+    },
+    "ruleToc": {
+      "chapterList": "//ul[@class=\"clearfix chapter-list\"]/*<js>\n//按卷分隔\nsub=String(result).slice(1,-1).split(/, (?=<div class=\"volume)/);\nsm=java.getString(\"class.location@tag.a.-1@text\",false);\n//显示卷名\nvar opts = {\n  showVolName: true\n};\n\nif(sub.length>=1)for(var i=0;i<sub.length;i++){\n//捕获卷名\njm=sub[i].match(/\\s([^<>\\n]+)\\s<\\/h2/);\nif(!jm)continue;\n\nsub[i]=sub[i].replace(/html\">/g,(opts.showVolName ? 'html\">🍥['+jm[1]+']🍥' :'html\">'+ ('').padStart(3, \"\\u2000\")));\n\n//按卷分块\nsub[i]='<li><span><a href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+sm+'\\\\'+jm[1]+'\">♦['+jm[1]+']♦</a></span></li>'+sub[i];\n\n}\n//合并结果\nsub.join(\"\")\n</js>a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&page={{page}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "轻小说📗",
+    "bookSourceName": "📗动漫之家",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://nnv3api.dmzj1.com",
+    "bookUrlPattern": "",
+    "customOrder": 7,
+    "enabled": false,
+    "enabledExplore": true,
+    "exploreUrl": "最新::/novel/recentUpdate/{{page-1}}.json\n人气::/novel/rank/0/0/{{page-1}}.json\n订阅::/novel/rank/1/0/{{page-1}}.json\n全部::/novel/0/0/0/{{page-1}}.json\n恐怖::/novel/2/0/1/{{page-1}}.json\n科幻::/novel/4/0/1/{{page-1}}.json\n侦探::/novel/6/0/1/{{page-1}}.json\n爱情::/novel/8/0/1/{{page-1}}.json\n校园::/novel/12/0/1/{{page-1}}.json\n神鬼::/novel/14/0/1/{{page-1}}.json\n魔法::/novel/16/0/1/{{page-1}}.json\n冒险::/novel/20/0/1/{{page-1}}.json\n其他::/novel/25/0/1/{{page-1}}.json\n搞笑::/novel/40/0/1/{{page-1}}.json\n格斗::/novel/47/0/1/{{page-1}}.json\n机战::/novel/1264/0/1/{{page-1}}.json\n仙侠::/novel/1265/0/1/{{page-1}}.json\n都市::/novel/1266/0/1/{{page-1}}.json\n历史::/novel/1267/0/1/{{page-1}}.json\n战争::/novel/1268/0/1/{{page-1}}.json\n治愈::/novel/1269/0/1/{{page-1}}.json\n励志::/novel/1270/0/1/{{page-1}}.json\n后宫::/novel/1271/0/1/{{page-1}}.json\n百合::/novel/1272/0/1/{{page-1}}.json\n纯爱::/novel/1273/0/1/{{page-1}}.json\n异界::/novel/1274/0/1/{{page-1}}.json\n异能::/novel/1275/0/1/{{page-1}}.json\n穿越::/novel/1276/0/1/{{page-1}}.json\n奇幻::/novel/1321/0/1/{{page-1}}.json",
+    "lastUpdateTime": 1611240735007,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "author": "$.authors@js:java.put('author',result)",
+      "canReName": "true",
+      "coverUrl": "$.cover",
+      "intro": "$.introduction\n<js>result=\"  \"+result;</js>",
+      "kind": "$.types",
+      "lastChapter": "$.last_update_chapter_name",
+      "name": "$.name@js:java.put('sm',result)",
+      "tocUrl": "$.id@js:\"https://nnv3api.dmzj1.com/novel/chapter/\"+result+\".json\""
+    },
+    "ruleContent": {
+      "content": "@js:result.replace(/&&[a-z]{4,};/ig,\"\")\nif((/\\.google\\.cn/).test(baseUrl)){\ndecodeURIComponent(baseUrl.replace(/^.+[&?]text=/, ''))}",
+      "imageStyle": "FULL",
+      "replaceRegex": "##^[^\\n]*\\n"
+    },
+    "ruleExplore": {
+      "author": "$.authors",
+      "bookList": "$.[*]",
+      "bookUrl": "/novel/{$.id}.json",
+      "coverUrl": "$.cover",
+      "intro": "$.last_update_time\n<js>\ndate= new Date(parseInt(result)*1000).toLocaleString();\n</js>##G.*",
+      "kind": "$.types",
+      "lastChapter": "{$.last_update_volume_name} \n{$.last_update_chapter_name}",
+      "name": "$.name"
+    },
+    "ruleSearch": {
+      "author": "$.authors",
+      "bookList": "$.[*]\n<js>\nvar opts = {\n  pattern: /\\/show\\/1\\/([^\\/]+)\\//,\n  name: '$.title',\n  author: '$.authors'\n};\n\n//删除糢糊匹配的搜索结果，然后按书名长度排序。依赖于baseUrl、result变量。\n//return Array\n//opts Object: 参数，包含以下key：\n//target List<Object>(result): 要过滤列表。\n//pattern RegExp: 匹配searchKey的正则表达式。\n//name String: 书名规则。\n//author String: 作者规则。\n//charset String('UTF-8'): 编码方式。\n//sorting Boolean(true): 是否重新排序。\n\nfunction searchFilter(opts){\n  result = opts.target === undefined ? result : opts.target;\n  opts.charset = opts.charset === undefined ? 'UTF-8' : opts.charset;\n  opts.sorting = opts.sorting === undefined ? true : !!opts.sorting;\n  function getText(ele, rule){\n    java.setContent(ele);\n    return String(java.getString(rule));\n  }\n  try {\n    var kw = (baseUrl.match(opts.pattern) || ['',''])[1];\n    kw = Packages.java.net.URLDecoder.decode(kw, opts.charset);\n    result = result.toArray().filter(e => getText(e, opts.name).includes(kw) || getText(e, opts.author).includes(kw));\n    return opts.sorting ? result.sort((a, b) => getText(a, opts.name).length - getText(b, opts.name).length) : result;\n  } catch(e) {\n    return result;\n  }\n}\n\nsearchFilter(opts);\n</js>",
+      "bookUrl": "$.id@js:\"https://nnv3api.dmzj1.com:443/novel/\"+result+\".json\"",
+      "coverUrl": "$.cover",
+      "intro": "",
+      "kind": "$.types",
+      "lastChapter": "$.last_name||$.last_update_volume_name",
+      "name": "$.title||$.name"
+    },
+    "ruleToc": {
+      "chapterList": "+<js>\n//二级目录，Json\nvar jdoc = JSON.parse(result);\nvar chUrl = 'https://nnv3api.dmzj1.com/novel/download/@get:{ID}_';\nvar volUrl = 'https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text=';\nvar list = [];\n//显示卷名\nvar opts = {\n  showVolName: false\n};\n\nsm=java.get('sm');\nauthor=java.get('author');\n\nfunction format(title){\n  return title.trim().replace(/^(\\d+)(?![\\s\\d卷部章节回.])/, '$1 ').replace(/\\s+/g, \"\\x20\\x20\");\n}\n\njdoc.forEach((vol,idx) => {\n  var chs = vol.chapters.map(ch => ({\n    text: (opts.showVolName ? '🍈[' + format(vol.volume_name) + ']🍈' : (ch.IsVip === '1' ? '💰' : '').padStart(3, \"\\u2000\")) + format(ch.chapter_name),\n    href: chUrl+vol.volume_id+'_'+ch.chapter_id+'.txt',\n    name: format(ch.chapter_name)\n  }));\n\n  var volInfo =author+\"：\\n\"+sm+'\\\\'+ format(vol.volume_name)+ '\\n目录(' + chs.length + \")：\\n\";\n  volInfo += chs.slice(0,30).map(v => v.name).join(\"\\n\");\n  volInfo += chs.length > 30 ? \"\\n……\" : '';\n\n  list.push({\n    text: '♦[' + format(vol.volume_name) + ']♦',\n    href: volUrl + encodeURIComponent(volInfo)\n});\n  list = list.concat(chs);\n});\n\nresult = list;\n</js>",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/show/1/{{key}}/{{page-1}}.json",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "轻小说📗",
+    "bookSourceName": "📗萌文库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://xs.kdays.net",
+    "bookUrlPattern": "",
+    "customOrder": 8,
+    "enabled": false,
+    "enabledExplore": true,
+    "exploreUrl": "不限::/list/all?type=0&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n热血::/list/all?type=1&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n冒险::/list/all?type=2&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n运动::/list/all?type=3&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n魔幻::/list/all?type=4&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n武侠::/list/all?type=5&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n校园::/list/all?type=6&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n耽美::/list/all?type=7&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n治愈::/list/all?type=8&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n推理::/list/all?type=9&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n惊悚::/list/all?type=10&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n科幻::/list/all?type=11&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n社会::/list/all?type=12&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\nGAL::/list/all?type=13&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}\n动画化::/list/all?type=14&order=update_time&orderBy=DESC&fword=all&size=-1&status=-1&apply=0&page={{page}}",
+    "lastUpdateTime": 1610555992576,
+    "ruleBookInfo": {
+      "author": "class.info-side@class.items@tag.li.2@a@text&&\nclass.info-side@class.items@tag.li.3@text",
+      "canReName": "true",
+      "coverUrl": "class.col-sm-3.0@img@src",
+      "intro": "class.info-side@tag.blockquote@html\n<js>\nresult=String(result).replace(/([\\u4e00-\\u9fa5]|。|！|？|……)\\s/g,'$1\\n');\nresult='  '+result;\n</js>",
+      "kind": "class.status text-muted@text&&\nclass.info-side@class.items@tag.li.0@text\n##.*\\(|\\)",
+      "lastChapter": "class.info-side@class.last-chapter@a@text##最新章节: ",
+      "name": "class.info-side@h2@text\n@js:java.put('sm',result)",
+      "tocUrl": "class.btn btn-primary read-btn@href",
+      "wordCount": "class.status text-muted@text## 字.*"
+    },
+    "ruleContent": {
+      "content": "<js>\nresult = (/\\.google\\.cn/).test(baseUrl)\n  ? decodeURIComponent(baseUrl.replace(/^.+[&?]text=/, ''))\n  : java.getString('tag.article@html');\nresult = String(result).replace(/<img\\s+[^>]+>/ig, '<p>〖插图，App暂不支持〗</p>');\n</js>"
+    },
+    "ruleExplore": {
+      "author": "class.author@text##作者:",
+      "bookList": "class.book-list@class.book",
+      "bookUrl": "class.detail@h3@a@href",
+      "coverUrl": "class.cover-side@tag.img@src",
+      "intro": "tag.blockquote@html",
+      "kind": "class.detail@tag.p.0@text&&\nclass.keywords@text##.*字 / ",
+      "lastChapter": "class.new-vol@text##最新:  ",
+      "name": "class.detail@h3@a@text",
+      "wordCount": "class.detail@tag.p.0@text##.*点击 / | 字.*"
+    },
+    "ruleSearch": {
+      "author": "class.detail@tag.p.1@text",
+      "bookList": "class.book-list@class.book",
+      "bookUrl": "class.detail@h3@a@href",
+      "coverUrl": "class.cover-side@tag.img@src",
+      "kind": "class.detail@tag.p.0@text&&\nclass.detail@class.keywords@text##.*字 / ",
+      "lastChapter": "class.detail@tag.p.2@text##最新:  ",
+      "name": "class.detail@h3@a@text",
+      "wordCount": "class.detail@tag.p.0@text##.*点击 / | 字.*"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\n//获取卷名\njm=java.getStringList(\"div[class= col-sm-10 info-side] h2@ownText\").toArray();\n//获取书名\nsm=java.getString(\"class.col-sm-12 text-center@h1@text\",false);\n//显示卷名\nvar opts = {\n  showVolName: false\n};\n\n//获取分卷\nsub=java.getElements(\"div[class= col-sm-10 info-side] ul\").toArray();\n\nfor(var i=0;i<sub.length;i++){\n\n//插入卷名\nsub[i]=String(sub[i].html()).replace(/e=\"/g,(opts.showVolName ? 'e=\"'+\"🍥[\"+jm[i]+\"]🍥\" : 'e=\"'+ ('').padStart(3, \"\\u2000\")));\n\n//按卷分块\nsub[i]='<li><a href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+sm+'\\\\'+jm[i]+'\" title=\"♦['+jm[i]+']♦\"></a></li>'+sub[i]}\n\n//合并结果\nsub=sub.join(\"\");\n</js>a",
+      "chapterName": "title",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/all?page={{page}}&w={{key}}&type=all",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "以Web版为主",
+    "bookSourceGroup": "轻小说📗",
+    "bookSourceName": "📗ESJ轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.esjzone.cc",
+    "customOrder": 9,
+    "enabled": false,
+    "enabledExplore": true,
+    "exploreUrl": "一周更新::/update/#tab{{page-1}}\n日轻小说::/list/{{page}}.html\n原创小说::/creation/{{page}}.html\nr15::/tags/R15/{{page}}.html\nr18::/tags/R18/{{page}}.html\n残酷描写::/tags/残酷描写/{{page}}.html\n异世界::/tags/异世界/{{page}}.html\n勇者::/tags/勇者/{{page}}.html\n龙::/tags/龙/{{page}}.html\n技能::/tags/技能/{{page}}.html\n冒险::/tags/冒险/{{page}}.html\n转生::/tags/转生/{{page}}.html\n黑暗::/tags/黑暗/{{page}}.html\n萝莉::/tags/萝莉/{{page}}.html\n后宫::/tags/后宫/{{page}}.html\n魔法::/tags/魔法/{{page}}.html\n少女::/tags/少女/{{page}}.html\n魔王::/tags/魔王/{{page}}.html\n战争::/tags/战争/{{page}}.html\n死亡::/tags/死亡/{{page}}.html\n穿越::/tags/穿越/{{page}}.html\n奴隶::/tags/奴隶/{{page}}.html\n主角::/tags/主角/{{page}}.html\n性转::/tags/性转/{{page}}.html\n纯爱::/tags/纯爱/{{page}}.html\n英雄谭::/tags/英雄谭/{{page}}.html\n百合::/tags/百合/{{page}}.html",
+    "header": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36",
+    "lastUpdateTime": 1607402612812,
+    "ruleBookInfo": {
+      "author": "class.list-unstyled mb-2 book-detail@tag.li.1@a@text",
+      "canReName": "true",
+      "coverUrl": "class.product-gallery text-center mb-3@a@href",
+      "intro": "class.description@html",
+      "kind": "class.list-unstyled mb-2 book-detail@tag.li.0@ownText&&\nclass.widget widget-tags hidden-lg-up mt-30@tag.a@text",
+      "lastChapter": "id.chapterList@tag.a.-1@p@text",
+      "name": "class.p-t-10 text-normal@text\n@js:java.put('sm',result)"
+    },
+    "ruleContent": {
+      "content": "@js:\n\nfunction getTranslation() {\n\timportClass(org.jsoup.Jsoup);\n\tlet doc = Jsoup.parse(result).select('.forum-content p'),\n\ttrans = (/trans='(\\d+)/).test(result)?result.match(/trans='(\\d+)/)[1]:'';\n\n\t//尝试获取翻译后的段落\n\tlet TransParts = (function() {\n\t\tif(doc.toArray().length<=trans&&doc.toArray().length>1){\n\t\t\tlet body = \"plxf=getTranslation&plxa[]=\" + trans;\n\t\t\tlet host = \"https://www.esjzone.cc\";\n\t\t\tlet url = (/esjzone\\.cc/).test(baseUrl) ? baseUrl: (host + baseUrl);\n\t\t\tlet options = {\n\t\t\t\tmethod: \"post\",\n\t\t\t\tbody: body\n\t\t\t};\n\t\t\turl = url + \",\" + JSON.stringify(options);\n\t\t\t//url=url+'@'+body;\n\t\t\tlet responseStr = String(java.ajax(url));\n\t\t\tif ((/JinJing/).test(responseStr)) {\n\t\t\t\treturn responseStr.replace(/<.?JinJing>/g, '');\n\t\t\t}else return doc.html()\n\t\t}else return doc.html()\n\t})();\n\n\tlet Html = TransParts;\n\tlet hint = \"无法显示内容，书籍可能下架或为其他站内容，请到原网页查看\\n\\n章节链接：\\n\" + baseUrl;\n\tlet adstr = \"(adsbygoogle = window.adsbygoogle || []).push({});\";\n\treturn (Html == null || Html == undefined || Html == '') ? hint: Html.replace(adstr, '');\n\n}\nresult = (/\\.google\\.cn/).test(baseUrl) ? decodeURIComponent(baseUrl.replace(/^.+[&?]text=[^\\.]*\\./, '')) : getTranslation();"
+    },
+    "ruleExplore": {
+      "coverUrl": "class.main-img@html\n@js:\nresult=result.match(/data-src=\"(.*)\"/)[1]"
+    },
+    "ruleSearch": {
+      "bookList": "class.col-lg-3 col-md-4 col-sm-3 col-xs-6",
+      "bookUrl": "class.card-title@a@href",
+      "coverUrl": "class.main-img@html\n@js:\nresult=result.match(/data-src=\"(.*)\"/)[1]",
+      "kind": "class.product-badge@text",
+      "lastChapter": "class.card-ep mt-2@text",
+      "name": "class.card-title@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "//div[@id=\"chapterList\"]/*\n<js>\n//按卷分隔\nsub=String(result).slice(1,-1).split(/, (?=<p class=\"non\")/);\nsm=java.getString(\"class.p-t-10 text-normal@text\",false);\ncount=0;\n//显示卷名\nvar opts = {\n  showVolName: false\n};\n\nfor(var i=0;i<sub.length;i++){\n//捕获卷名\njm=sub[i].match(/\"non\">\\s*([^<>\\n]+)\\s*<\\/p/);\n\nif(!jm){jm=sub[i].match(/\\s*([^<>\\n]+)\\s*<\\/s/);}\n\nif(!jm)continue;\nsub[i]=sub[i].replace(/<p[^>]*>/ig,(opts.showVolName ? '<p>🍥['+jm[1]+']🍥' : '<p>'+ ('').padStart(3, \"\\u2000\")));\n\n//按卷分块\nsub[i]='<a href=\"https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text='+(++count)+'.'+sm+'\\\\'+jm[1]+'\"><p>♦['+jm[1]+']♦</p></a>'+sub[i];\n\n}\n//合并结果\nsub.join(\"\")\n</js>a",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/tags/{{key}}/{{page}}.html",
+    "weight": 0
+  }
+]
